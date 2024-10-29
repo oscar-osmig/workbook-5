@@ -10,10 +10,20 @@ public class Main {
         SemiTruck semiTruck = new SemiTruck("green", 4, 5, 6);
         HoverCraft hoverCraft = new HoverCraft("bluish", 4, 5, 6);
 
-        System.out.println(slowRide.toString());
-        System.out.println(car.toString());
-        System.out.println(semiTruck.toString());
-        System.out.println(hoverCraft.toString());
+//        System.out.println(slowRide.toString());
+//        System.out.println(car.toString());
+//        System.out.println(semiTruck.toString());
+//        System.out.println(hoverCraft.toString());
+        shapeMain();
+    }
 
+    public static void shapeMain(){
+        Shape s1 = new Shape();
+        Shape s2 = new Square();
+        Shape s3 = new Circle();
+
+        s1.calculateCircumference(3);
+        ((Square) s2).calculateArea(5);
+        ((Circle) s3).calculateCircumference(8);
     }
 }
