@@ -35,8 +35,8 @@ public class VehicleTwo extends Asset{
                 return 0.0;
             }
 
-        } else if (this.odometer > 100000 && !this.makeModel.equalsIgnoreCase("toyota/prius")
-                && !this.makeModel.equalsIgnoreCase("honda/civic")) {
+        } else if (this.odometer > 100000 && !getMakeModel().toLowerCase().startsWith("toyota")
+                && !getMakeModel().toLowerCase().startsWith("honda")) {
             return getOriginalCost() * 1.25;
         }else {
             return 0.0;
